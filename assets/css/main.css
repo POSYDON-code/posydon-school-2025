@@ -1696,7 +1696,7 @@ section,
 
 .sponsors .client-logo img {
   padding: 50px;
-  max-width: 110%;
+  max-width: 100%;
   /*80%*/
   transition: 0.3s;
 }
