@@ -2,101 +2,108 @@
 /*--------------------------------------------------------------
 # Teachers Section
 --------------------------------------------------------------*/
-.teachers {
+.teaching-assistants-2 {
+  --heading-color: #ffffff;
   --accent-color: #9fc5e8;
 
-  .team-member {
-    background-color: var(--surface-color);
-    border-radius: 15px;
+  .team-slider {
     overflow: hidden;
-    box-shadow: 0 0 30px color-mix(in srgb, var(--default-color), transparent 95%);
-    transition: transform 0.3s ease;
-    height: 100%;
-
-    &:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 30px color-mix(in srgb, var(--accent-color), transparent 80%);
-
-      .member-img .social {
-        right: 0;
-      }
-    }
+    margin-bottom: 24px;
   }
 
-  .member-img {
-    position: relative;
-    overflow: hidden;
-    aspect-ratio: 1;
+  .slider-nav {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      position: static;
+      width: 40px;
+      height: 40px;
+      margin: 0;
+      background-color: var(--surface-color);
+      border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+      border-radius: 50%;
+      transition: 0.3s;
 
-    .social {
-      position: absolute;
-      right: -100%;
-      top: 0;
-      bottom: 0;
-      width: 50px;
-      background: linear-gradient(to left, var(--accent-color), color-mix(in srgb, var(--accent-color), transparent 20%));
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
-      transition: right 0.3s ease;
+      &::after {
+        font-size: 14px;
+        color: var(--default-color);
+      }
 
-      a {
-        color: var(--contrast-color);
-        font-size: 1.2rem;
-        width: 32px;
-        height: 32px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        transition: 0.3s;
+      &:hover {
+        background-color: var(--accent-color);
+        border-color: var(--accent-color);
 
-        &:hover {
-          background-color: color-mix(in srgb, var(--contrast-color), transparent 90%);
-          transform: scale(1.1);
+        &::after {
+          color: var(--contrast-color);
         }
       }
     }
   }
 
-  .member-info {
-    padding: 1.5rem;
-    text-align: center;
+  .member {
+    .member-img {
+      position: relative;
+      margin-bottom: 16px;
+      overflow: hidden;
+      border-radius: 20px;
 
-    h4 {
-      font-size: 1.25rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-      color: var(--heading-color);
+      img {
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+      }
+
+      .social {
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, .6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+
+        a {
+          color: var(--contrast-color);
+          font-size: 20px;
+          transition: 0.3s;
+
+          &:hover {
+            color: var(--accent-color);
+            transform: translateY(-2px);
+          }
+        }
+      }
+
+      &:hover {
+        .social {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
     }
 
-    span {
-      display: block;
-      font-size: 0.875rem;
-      margin-bottom: 1rem;
-      color: var(--accent-color);
-    }
+    .member-info {
+      h4 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 4px;
+        color: var(--heading-color);
+      }
 
-    p {
-      font-size: 0.875rem;
-      line-height: 1.6;
-      margin: 0;
-      color: color-mix(in srgb, var(--default-color), transparent 30%);
+      span {
+        font-size: 15px;
+        color: color-mix(in srgb, var(--default-color), transparent 30%);
+      }
     }
   }
 
-  @media (max-width: 991px) {
-    .team-member {
-      max-width: 400px;
-      margin: 0 auto;
-    }
+  .swiper-wrapper {
+    height: auto !important;
   }
 }
