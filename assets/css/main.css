@@ -1304,26 +1304,26 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Teachers Section
+# Instructors Section
 --------------------------------------------------------------*/
-.teaching-assistants-2 {
+.instructors {
   --heading-color: #ffffff;
   --accent-color: #9fc5e8;
 }
 
-.teaching-assistants-2 .team-slider {
+.instructors .team-slider {
   overflow: hidden;
   margin-bottom: 24px;
 }
 
-.teaching-assistants-2 .slider-nav {
+.instructors .slider-nav {
   display: flex;
   justify-content: center;
   gap: 12px;
 }
 
-.teaching-assistants-2 .slider-nav .swiper-button-prev,
-.teaching-assistants-2 .slider-nav .swiper-button-next {
+.instructors .slider-nav .swiper-button-prev,
+.instructors .slider-nav .swiper-button-next {
   position: static;
   width: 40px;
   height: 40px;
@@ -1334,37 +1334,37 @@ section,
   transition: 0.3s;
 }
 
-.teaching-assistants-2 .slider-nav .swiper-button-prev::after,
-.teaching-assistants-2 .slider-nav .swiper-button-next::after {
+.instructors .slider-nav .swiper-button-prev::after,
+.instructors .slider-nav .swiper-button-next::after {
   font-size: 14px;
   color: var(--default-color);
 }
 
-.teaching-assistants-2 .slider-nav .swiper-button-prev:hover,
-.teaching-assistants-2 .slider-nav .swiper-button-next:hover {
+.instructors .slider-nav .swiper-button-prev:hover,
+.instructors .slider-nav .swiper-button-next:hover {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
 }
 
-.teaching-assistants-2 .slider-nav .swiper-button-prev:hover::after,
-.teaching-assistants-2 .slider-nav .swiper-button-next:hover::after {
+.instructors .slider-nav .swiper-button-prev:hover::after,
+.instructors .slider-nav .swiper-button-next:hover::after {
   color: var(--contrast-color);
 }
 
-.teaching-assistants-2 .member .member-img {
+.instructors .member .member-img {
   position: relative;
   margin-bottom: 16px;
   overflow: hidden;
   border-radius: 20px;
 }
 
-.teaching-assistants-2 .member .member-img img {
+.instructors .member .member-img img {
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
 }
 
-.teaching-assistants-2 .member .member-img .social {
+.instructors .member .member-img .social {
   position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.6);
@@ -1377,35 +1377,35 @@ section,
   transition: 0.3s;
 }
 
-.teaching-assistants-2 .member .member-img .social a {
+.instructors .member .member-img .social a {
   color: var(--contrast-color);
   font-size: 20px;
   transition: 0.3s;
 }
 
-.teaching-assistants-2 .member .member-img .social a:hover {
+.instructors .member .member-img .social a:hover {
   color: var(--accent-color);
   transform: translateY(-2px);
 }
 
-.teaching-assistants-2 .member .member-img:hover .social {
+.instructors .member .member-img:hover .social {
   opacity: 1;
   visibility: visible;
 }
 
-.teaching-assistants-2 .member .member-info h4 {
+.instructors .member .member-info h4 {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 4px;
   color: var(--heading-color);
 }
 
-.teaching-assistants-2 .member .member-info span {
+.instructors .member .member-info span {
   font-size: 15px;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
-.teaching-assistants-2 .swiper-wrapper {
+.instructors .swiper-wrapper {
   height: auto !important;
 }
 
