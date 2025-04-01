@@ -315,7 +315,7 @@ h6 {
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-color);
-    font-size: 15px;
+    font-size: 18px;
     padding: 0 2px;
     font-family: var(--nav-font);
     font-weight: 600;
@@ -547,6 +547,7 @@ h6 {
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
+  --accent-color: #bcbcbc;
   color: var(--default-color);
   background-color: var(--background-color);
   font-size: 14px;
@@ -858,9 +859,9 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# Home Section
 --------------------------------------------------------------*/
-.hero {
+.home {
   --heading-color: #ffffff;
   --accent-color: #9fc5e8;
   width: 100%;
@@ -873,7 +874,7 @@ section,
   flex-direction: column;
 }
 
-.hero img {
+.home img {
   position: absolute;
   inset: 0;
   display: block;
@@ -883,7 +884,7 @@ section,
   z-index: 1;
 }
 
-.hero:before {
+.home:before {
   content: "";
   background: color-mix(in srgb, var(--background-color), transparent 30%);
   position: absolute;
@@ -891,40 +892,40 @@ section,
   z-index: 2;
 }
 
-.hero .container {
+.home .container {
   position: relative;
   z-index: 3;
 }
 
-.hero h2 {
+.home h2 {
   margin: 0;
-  font-size: 48px;
+  font-size: 50px;
   font-weight: 700;
 }
 
-.hero h2 span {
+.home h2 span {
   color: var(--accent-color);
 }
 
-.hero p {
+.home p {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin: 10px 0 0 0;
   font-size: 24px;
 }
 
 @media (max-width: 768px) {
-  .hero h2 {
+  .home h2 {
     font-size: 32px;
     line-height: 36px;
   }
 
-  .hero p {
+  .home p {
     font-size: 18px;
     line-height: 24px;
   }
 }
 
-.hero .about-info {
+.home .about-info {
   overflow: hidden;
   position: relative;
   padding: 60px 0 40px 0;
@@ -932,7 +933,7 @@ section,
   width: 100%;
 }
 
-.hero .about-info:before {
+.home .about-info:before {
   content: "";
   background: color-mix(in srgb, var(--background-color), transparent 50%);
   position: absolute;
@@ -942,23 +943,23 @@ section,
   right: 0;
 }
 
-.hero .about-info h2 {
+.home .about-info h2 {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 10px;
   color: #fff;
 }
 
-.hero .about-info h3 {
-  font-size: 18px;
+.home .about-info h3 {
+  font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 10px;
   color: #fff;
 }
 
-.hero .about-info p {
-  font-size: 14px;
+.home .about-info p {
+  font-size: 18px;
   margin-bottom: 20px;
   color: #fff;
 }
@@ -1124,7 +1125,7 @@ section,
 }
 
 .apply p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: var(--contrast-color);
   margin-bottom: 30px;
   font-size: 18px;
 }
@@ -1158,7 +1159,7 @@ section,
 .venue {
   --background-color: #000000;
   --default-color: #eeeeee;
-  --heading-color: #bcbcbc;
+  --heading-color: #ffffff;
   --accent-color: #9fc5e8;
   --surface-color: #6aa84f;
   --contrast-color: #ffffff;
@@ -1174,6 +1175,11 @@ section,
   width: 100%;
   height: 100%;
   min-height: 300px;
+}
+
+.venue p {
+  margin-bottom: 0;
+  font-size: 18px;
 }
 
 .venue .venue-info {
@@ -1209,6 +1215,7 @@ section,
 .venue .venue-info p {
   color: var(--contrast-color);
   margin-bottom: 0;
+  font-size: 18px;
 }
 
 .venue .venue-gallery-container {
@@ -1233,6 +1240,7 @@ section,
 # Lodging Section
 --------------------------------------------------------------*/
 .lodging {
+  --heading-color: #ffffff;
   --accent-color: #9fc5e8;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1294,13 +1302,13 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Soc Section
+# Teachers Section
 --------------------------------------------------------------*/
-.soc {
+.teachers {
   --accent-color: #9fc5e8;
 }
 
-.soc .team-member {
+.teachers .team-member {
   background-color: var(--surface-color);
   border-radius: 15px;
   overflow: hidden;
@@ -1309,28 +1317,28 @@ section,
   height: 100%;
 }
 
-.soc .team-member:hover {
+.teachers .team-member:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 30px color-mix(in srgb, var(--accent-color), transparent 80%);
 }
 
-.soc .team-member:hover .member-img .social {
+.teachers .team-member:hover .member-img .social {
   right: 0;
 }
 
-.soc .member-img {
+.teachers .member-img {
   position: relative;
   overflow: hidden;
   aspect-ratio: 1;
 }
 
-.soc .member-img img {
+.teachers .member-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.soc .member-img .social {
+.teachers .member-img .social {
   position: absolute;
   right: -100%;
   top: 0;
@@ -1345,7 +1353,7 @@ section,
   transition: right 0.3s ease;
 }
 
-.soc .member-img .social a {
+.teachers .member-img .social a {
   color: var(--contrast-color);
   font-size: 1.2rem;
   width: 32px;
@@ -1357,31 +1365,31 @@ section,
   transition: 0.3s;
 }
 
-.soc .member-img .social a:hover {
+.teachers .member-img .social a:hover {
   background-color: color-mix(in srgb, var(--contrast-color), transparent 90%);
   transform: scale(1.1);
 }
 
-.soc .member-info {
+.teachers .member-info {
   padding: 1.5rem;
   text-align: center;
 }
 
-.soc .member-info h4 {
+.teachers .member-info h4 {
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: var(--heading-color);
 }
 
-.soc .member-info span {
+.teachers .member-info span {
   display: block;
   font-size: 0.875rem;
   margin-bottom: 1rem;
   color: var(--accent-color);
 }
 
-.soc .member-info p {
+.teachers .member-info p {
   font-size: 0.875rem;
   line-height: 1.6;
   margin: 0;
@@ -1389,7 +1397,7 @@ section,
 }
 
 @media (max-width: 991px) {
-  .soc .team-member {
+  .teachers .team-member {
     max-width: 400px;
     margin: 0 auto;
   }
@@ -1501,13 +1509,16 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Loc Section
+# Soc Section
 --------------------------------------------------------------*/
-.loc {
+.soc {
+  --heading-color: #ffffff;
   --accent-color: #9fc5e8;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.loc .team-member {
+.soc .team-member {
   background-color: var(--surface-color);
   overflow: hidden;
   border-radius: 5px;
@@ -1515,12 +1526,12 @@ section,
   height: 100%;
 }
 
-.loc .team-member .member-img {
+.soc .team-member .member-img {
   position: relative;
   overflow: hidden;
 }
 
-.loc .team-member .social {
+.soc .team-member .social {
   position: absolute;
   left: 0;
   bottom: 30px;
@@ -1530,7 +1541,7 @@ section,
   text-align: center;
 }
 
-.loc .team-member .social a {
+.soc .team-member .social a {
   background: color-mix(in srgb, var(--contrast-color), transparent 25%);
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin: 0 3px;
@@ -1543,34 +1554,110 @@ section,
   align-items: center;
 }
 
-.loc .team-member .social a:hover {
+.soc .team-member .social a:hover {
   color: var(--contrast-color);
   background: var(--accent-color);
 }
 
-.loc .team-member .social i {
+.soc .team-member .social i {
   font-size: 18px;
   line-height: 0;
 }
 
-.loc .team-member .member-info {
+.soc .team-member .member-info {
   padding: 25px 15px;
 }
 
-.loc .team-member .member-info h4 {
+.soc .team-member .member-info h4 {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 18px;
 }
 
-.loc .team-member .member-info span {
+.soc .team-member .member-info span {
   display: block;
   font-size: 13px;
   font-weight: 400;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
 
-.loc .team-member:hover .social {
+.soc .team-member:hover .social {
+  opacity: 1;
+  bottom: 15px;
+}
+
+/*--------------------------------------------------------------
+# Loc Section
+--------------------------------------------------------------*/
+.soc-2 {
+  --heading-color: #ffffff;
+  --accent-color: #9fc5e8;
+}
+
+.soc-2 .team-member {
+  background-color: var(--surface-color);
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.soc-2 .team-member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.soc-2 .team-member .social {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  right: 0;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+  text-align: center;
+}
+
+.soc-2 .team-member .social a {
+  background: color-mix(in srgb, var(--contrast-color), transparent 25%);
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin: 0 3px;
+  border-radius: 4px;
+  width: 36px;
+  height: 36px;
+  transition: ease-in-out 0.3s;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.soc-2 .team-member .social a:hover {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+}
+
+.soc-2 .team-member .social i {
+  font-size: 18px;
+  line-height: 0;
+}
+
+.soc-2 .team-member .member-info {
+  padding: 25px 15px;
+}
+
+.soc-2 .team-member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.soc-2 .team-member .member-info span {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+.soc-2 .team-member:hover .social {
   opacity: 1;
   bottom: 15px;
 }
@@ -1579,6 +1666,7 @@ section,
 # Sponsors Section
 --------------------------------------------------------------*/
 .sponsors {
+  --heading-color: #ffffff;
   --accent-color: #9fc5e8;
   --surface-color: #ffffff;
   --contrast-color: #ffffff;
@@ -1601,7 +1689,7 @@ section,
 
 .sponsors .client-logo img {
   padding: 50px;
-  max-width: 100%;
+  max-width: 110%;
   /*80%*/
   transition: 0.3s;
 }
@@ -1621,6 +1709,7 @@ section,
 # Contact Section
 --------------------------------------------------------------*/
 .contact {
+  --heading-color: #ffffff;
   --accent-color: #9fc5e8;
   padding-top: 60px;
   padding-bottom: 60px;

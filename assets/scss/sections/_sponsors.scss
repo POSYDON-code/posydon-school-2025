@@ -3,6 +3,7 @@
 # Sponsors Section
 --------------------------------------------------------------*/
 .sponsors {
+  --heading-color: #ffffff;
   --accent-color: #9fc5e8;
   --surface-color: #ffffff;
   --contrast-color: #ffffff;
@@ -23,7 +24,7 @@
 
     img {
       padding: 50px;
-      max-width: 100%;
+      max-width: 110%;
       /*80%*/
       transition: 0.3s;
 

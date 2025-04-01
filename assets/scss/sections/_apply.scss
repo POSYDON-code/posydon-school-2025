@@ -41,7 +41,7 @@
   }
 
   p {
-    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    color: var(--contrast-color);
     margin-bottom: 30px;
     font-size: 18px;
   }
