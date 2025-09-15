@@ -3,7 +3,7 @@
 # Schedule Section
 --------------------------------------------------------------*/
 .schedule {
-  --heading-color: #999999;
+  --heading-color: #ffffff;
   --accent-color: #9fc5e8;
   padding-top: 60px;
   --background-color: color-mix(in srgb, var(--alt-background-color), transparent 95%);
@@ -25,8 +25,8 @@
       border: none;
       border-radius: 50px;
       font-weight: 600;
-      background-color: var(--heading-color);
-      color: var(--contrast-color);
+      background-color: var(--contrast-color);//var(--heading-color);
+      color: white;//var(--contrast-color);
       padding: 10px 100px;
 
       @media (max-width: 991px) {
@@ -43,7 +43,7 @@
 
       &.active {
         background-color: var(--accent-color);
-        color: var(--contrast-color);
+        color: white;//var(--contrast-color);
       }
     }
   }
